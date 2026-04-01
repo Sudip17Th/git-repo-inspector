@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Git Repo Inspector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Git Repo Inspector</h1>
+    <p>Paste a public GitHub repo URL</p>
+
+    <div class="search-box">
+      <input id="repoUrl" type="text" placeholder="https://github.com/facebook/react" />
+      <button id="fetchBtn">Fetch Details</button>
+    </div>
+
+    <div id="status"></div>
+
+    <div id="repoCard" class="card hidden"></div>
+    <div id="readmeCard" class="card hidden"></div>
+    <div id="contributorsCard" class="card hidden"></div>
+    <div id="commitsCard" class="card hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
